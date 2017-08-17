@@ -164,4 +164,4 @@ async def english(ctx, book, chapterANDverse):
 
 
 
-client.run('MzQ2Nzg0MTI5OTIyMjM2NDI3.DHbvDw.XuyE8LwIWWO2E8Li2A8oSRlp4To')
+client.run('token')
