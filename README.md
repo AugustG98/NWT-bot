@@ -2,7 +2,7 @@
 
 BOT NOT FINISHED 
 
-A discord biblebot for The New World Translation (https://wol.jw.org/en/wol/binav/r1/lp-e)
+A discord bot for getting Bible verses from the The New World Translation (https://wol.jw.org/en/wol/binav/r1/lp-e)
 
 
 ## Guide
