@@ -1,4 +1,4 @@
-# NWT-bot
+# NWT-Bot
 
 BOT NOT FINISHED 
 
