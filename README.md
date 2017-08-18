@@ -11,6 +11,8 @@ To get a verse do:
 
 `!language book chapter:verse`
 
+**PS:**
+
 * Can only do english and spanish
 * For now it can only pull out one verse at the time 
 * Can't pull out books with a number infront of the name just yet (1 John etc)
