@@ -160,6 +160,24 @@ async def english(ctx, book, chapterANDverse):
         header = paragraph.text.strip()
 
     await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+result+'```')
+   
+#SPANISH
+@client.command(pass_context=True)
+async def spanish(ctx, book, chapterANDverse):
+
+    chapter, verse = chapterANDverse.split(':')
+
+    if book in dict:
+        booknumber = dict.get(book)
+
+    sauce = urllib.request.urlopen('https://wol.jw.org/es/wol/b/r4/lp-s/Rbi8/S/1987/'+booknumber+'/'+chapter+'#study=discover').read()
+    soup = bs.BeautifulSoup(sauce, 'lxml')
+    for paragraph in soup.find_all('span', id= 'v'+booknumber+'-'+chapter+'-'+verse+'-1' ):
+        result = paragraph.text
+    for paragraph in soup.find_all(class_='resultsNavigationSelected documentLocation navChapter'):
+        header = paragraph.text.strip()
+
+    await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+result+'```')
 
 
 
