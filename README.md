@@ -32,7 +32,7 @@ Every commit = +1
 Example:
 0.0.0 > commit > 0.0.1
 
-## Authors
+## Author
 
 * **August G** - [AugustG98](https://github.com/AugustG98)
 
