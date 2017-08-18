@@ -20,27 +20,35 @@ It's being worked on, will update as more functionality is being added.
 **INVITE BOT TO YOUR SERVER** : https://discordapp.com/oauth2/authorize?client_id=346784129922236427&scope=bot&permissions=0
 
 
+
 ## Built With
 
 * [discord.py](https://github.com/Rapptz/discord.py) - discord.py is an API wrapper for Discord written in Python.
 * [BeautifulSoup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Python library for pulling data out of HTML and XML files.
 
+
 ## Versioning
+
 
 Every commit = +1
 
 Example:
 0.0.0 > commit > 0.0.1
 
+
 ## Author
+
 
 * **August G** - [AugustG98](https://github.com/AugustG98)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
+
 ## License
 
+
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
 
 ## Acknowledgments
 
