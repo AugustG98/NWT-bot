@@ -28,7 +28,7 @@ dict = {
     'Joshua' : '6',
     'Josh' : '6',
     'Judges' : '7' ,
-    'Judg' : '7',
+    'Judge' : '7',
     'Ruth' : '8',
     '1 Samuel' : '9',
     '1 Sam' : '9',
