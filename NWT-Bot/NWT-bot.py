@@ -38,7 +38,6 @@ async def greek(ctx, book, chapterANDverse):
     language = 'greek'
     booknumber, chapter, verse, fromVerse, toVerse = InputHandler.process(book, chapterANDverse)
     header, verse, result = OutputHandler.getVerses(booknumber, chapter, verse, fromVerse, toVerse, language)
-
     await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+result+'```')
 
 #FRENCH
@@ -59,4 +58,4 @@ async def spanish(ctx, book, chapterANDverse):
 
     await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+result+'```')
 
-client.run('')
+client.run('token')
