@@ -1,8 +1,4 @@
-#Will keep working on the list. Feel free to help out.
-
-#Will add this as a function for NWT-Bot.py later
-  
-  dict = {
+bookprefix = {
     'Genesis' : '1',
     'genesis' : '1',
     'Gen' : '1',
