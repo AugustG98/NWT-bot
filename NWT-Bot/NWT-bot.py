@@ -59,4 +59,4 @@ async def spanish(ctx, book, chapterANDverse):
 
     await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+result+'```')
 
-client.run('MzQ2Nzg0MTI5OTIyMjM2NDI3.DHfORQ.U-ELYc67t1Sa0Mb1XMESc_bM9mA')
+client.run('')
