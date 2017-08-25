@@ -25,16 +25,6 @@ It's being worked on, will update as more functionality is being added.
 * [discord.py](https://github.com/Rapptz/discord.py) - discord.py is an API wrapper for Discord written in Python.
 * [BeautifulSoup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) - Python library for pulling data out of HTML and XML files.
 
-
-## Versioning
-
-
-Every commit = +1
-
-Example:
-0.0.0 > commit > 0.0.1
-
-
 ## Author
 
 
