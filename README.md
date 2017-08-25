@@ -2,7 +2,7 @@
 
 BOT NOT FINISHED 
 
-A discord bot for getting Bible verses from the The New World Translation (https://wol.jw.org/en/wol/binav/r1/lp-e)
+A discord bot for getting Bible verses from the New World Translation (https://wol.jw.org/en/wol/binav/r1/lp-e)
 
 
 ## GUIDE
@@ -10,16 +10,9 @@ To get a verse do:
 
 `!language book chapter:verse`
 
-Functionality:
-
-* Can print one verse at the time
-* Can do !english and !spanish
-
 Problems:
 
-* Can only pull out one verse at the time
 * Can't pull out books with a number infront of the name just yet (1 John etc)
-* Needs functions so the entire code doesn't have to be in one file.
 
 It's being worked on, will update as more functionality is being added.
 
