@@ -8,7 +8,7 @@ A discord bot for getting Bible verses from the New World Translation (https://w
 ## GUIDE
 To get a verse do:
 
-`!language book chapter:verse`
+`!language book chapter:verse(s)`
 
 Problems:
 
@@ -30,7 +30,7 @@ It's being worked on, will update as more functionality is being added.
 
 * **August G** - [AugustG98](https://github.com/AugustG98)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/AugustG98/NWT-Bot/graphs/contributors) who participated in this project.
 
 
 ## License
