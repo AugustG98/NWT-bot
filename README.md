@@ -35,7 +35,7 @@ See also the list of [contributors](https://github.com/AugustG98/NWT-Bot/graphs/
 
 ## License
 
-[LICENSE.md](LICENSE.txt) file for details
+[LICENSE.txt](LICENSE.txt) file for details
 
 
 ## Acknowledgments
