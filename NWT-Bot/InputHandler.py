@@ -1,12 +1,20 @@
 import books
+import time
+from datetime import datetime
 
-def process(book, Chapter_Verse):
+line = '\n'+'-'*30
 
-    print('verse called: '+book+' '+Chapter_Verse)
+def process(book, Chapter_Verse, language, add):
+    if (add != '0'):
+        book += Chapter_Verse
+        Chapter_Verse = add
+    else:
+        pass
+    print(str(datetime.now())+line+'\nverse(s) called in '+language+': '+book+' '+Chapter_Verse)
+
     chapter, verse = Chapter_Verse.split(':')
 
     try:
-
         fromVerse, toVerse = verse.split('-')
 
     except:
