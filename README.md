@@ -8,12 +8,6 @@ To get a verse do:
 
 `!language book chapter:verse(s)`
 
-Problems:
-
-* Can't pull out books with a number infront of the name just yet (1 John etc)
-
-It's being worked on, will update as more functionality is being added.
-
 **INVITE BOT TO YOUR SERVER** : https://discordapp.com/oauth2/authorize?client_id=346784129922236427&scope=bot&permissions=0
 
 
