@@ -1,4 +1,4 @@
-languageURL = {
+languageURLs = {
     'english' : 'https://wol.jw.org/en/wol/b/r1/lp-e/nwt/E/2013/',
     'hebrew' : 'https://wol.jw.org/he/wol/b/r145/lp-q/sbi1/Q/2012/',
     'greek' : 'https://wol.jw.org/el/wol/b/r11/lp-g/bi12/G/1997/',
