@@ -4,4 +4,5 @@ languageURLs = {
     'greek' : 'https://wol.jw.org/el/wol/b/r11/lp-g/bi12/G/1997/',
     'french' : 'https://wol.jw.org/fr/wol/b/r30/lp-f/Rbi8/F/1995/',
     'spanish' : 'https://wol.jw.org/es/wol/b/r4/lp-s/Rbi8/S/1987/'
+    
     }
