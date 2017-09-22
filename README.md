@@ -1,7 +1,5 @@
 # NWT-Bot
 
-BOT NOT FINISHED 
-
 A discord bot for getting Bible verses from the New World Translation (https://wol.jw.org/en/wol/binav/r1/lp-e)
 
 
