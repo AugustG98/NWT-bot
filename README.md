@@ -8,6 +8,10 @@ To get a verse do:
 
 `!language book chapter:verse(s)`
 
+Other commands:
+
+`!language` - show available languages
+
 **INVITE BOT TO YOUR SERVER** : https://discordapp.com/oauth2/authorize?client_id=346784129922236427&scope=bot&permissions=0
 
 
