@@ -18,6 +18,27 @@ Format = '**Wrong format used, try again:**\n```!language bookname chapter:verse
 async def on_ready():
     print(online)
 
+@client.event
+async def on_message(message):
+    if message.content.startswith('!announce'):
+        botowner = 'Benroy#7151'
+        print(message.author)
+        if (str(message.author) == botowner):
+            await client.send_message(message.channel, message.author)
+            for server in client.servers:
+                for channel in server.channels:
+                    await client.send_message(channel, 'this is a test, ignore')
+        else:
+            await client.send_message(message.channel, 'Only Benroy#7151 can do this')
+
+@client.command(pass_context=True)
+async def servers(ctx):
+
+    list = ''
+    for server in client.servers:
+        list += str(server)+',\n'
+    await client.say('List of servers NWT-Bot is connected to: ```'+list+'```')
+
 #PRINT AVAILABLE LANGUAGES IN CHAT
 @client.command(pass_context=True)
 async def language():
@@ -43,93 +64,10 @@ async def english(ctx, book, chapterANDverse, add='0'):
         await client.say(Format)
         pass
 
-#HEBREW
-@client.command(pass_context=True)
-async def hebrew(ctx, book, chapterANDverse, add='0'):
-    language = 'hebrew'
-    try:
-        header, verse, data = getdata(book, chapterANDverse, language, add)
-        try:
-            await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
-
-        except Exception:
-            await client.say(TooLong)
-
-    except Exception:
-        await client.say(Format)
-        pass
-
-#GREEK
-@client.command(pass_context=True)
-async def greek(ctx, book, chapterANDverse, add='0'):
-    language = 'greek'
-    try:
-        header, verse, data = getdata(book, chapterANDverse, language, add)
-        try:
-            await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
-
-        except Exception:
-            await client.say(TooLong)
-
-    except Exception:
-        await client.say(Format)
-        pass
-
-#FRENCH
-@client.command(pass_context=True)
-async def french(ctx, book, chapterANDverse, add='0'):
-    language = 'french'
-    try:
-        header, verse, data = getdata(book, chapterANDverse, language, add)
-        try:
-            await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
-
-        except Exception:
-            await client.say(TooLong)
-
-    except Exception:
-        await client.say(Format)
-        pass
-
-#SPANISH
-@client.command(pass_context=True)
-async def spanish(ctx, book, chapterANDverse, add='0'):
-    language = 'spanish'
-    try:
-        header, verse, data = getdata(book, chapterANDverse, language, add)
-        try:
-            await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
-
-        except Exception:
-            await client.say(TooLong)
-
-    except Exception:
-        await client.say(Format)
-        pass
-
-#GERMAN
-@client.command(pass_context=True)
-async def german(ctx, book, chapterANDverse, add='0'):
-    t0 = time.time()
-    language = 'german'
-    try:
-        header, verse, data = getdata(book, chapterANDverse, language, add)
-        try:
-            await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
-
-        except Exception:
-            await client.say(TooLong)
-            print(error+line)
-
-    except Exception:
-        await client.say(Format)
-        print('Wrong format used.'+line)
-        pass
-
 def getdata(book, chapterANDverse, language, add):
 
     booknumber, chapter, verse, fromVerse, toVerse = InputHandler.process(book, chapterANDverse, language, add)
     header, verse, data = OutputHandler.getVerses(booknumber, chapter, verse, fromVerse, toVerse, language)
     return(header, verse, data)
 
-client.run('')
+client.run('MzQ2Nzg0MTI5OTIyMjM2NDI3.DKcsUA.9hMx0MsYIqbolZJuUVyIabsi87s')
