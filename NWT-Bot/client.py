@@ -17,19 +17,6 @@ Format = '**Wrong format used, try again:**\n```!language bookname chapter:verse
 async def on_ready():
     print(online)
 
-@client.event
-async def on_message(message):
-    if message.content.startswith('!announce'):
-        botowner = 'Benroy#7151'
-        print(message.author)
-        if (str(message.author) == botowner):
-            await client.send_message(message.channel, message.author)
-            for server in client.servers:
-                for channel in server.channels:
-                    await client.send_message(channel, 'this is a test, ignore')
-        else:
-            await client.send_message(message.channel, 'Only Benroy#7151 can do this')
-
 #PRINT SERVERS BOT IS CONNECTED TO IN CHAT
 @client.command(pass_context=True)
 async def servers(ctx):
