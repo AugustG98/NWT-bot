@@ -10,7 +10,6 @@ des = 'A discord bot for getting Bible verses from the New World Translation'
 prefix = '!'
 client = commands.Bot(description=des, command_prefix=prefix)
 online = '\n\nBot is online!\n\n'
-error = 'too many characters, 2000 characters max!'
 TooLong = '**The passage is too long for me to grab, sorry!**'
 Format = '**Wrong format used, try again:**\n```!language bookname chapter:verse(s)```'
 
