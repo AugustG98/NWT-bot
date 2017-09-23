@@ -30,6 +30,7 @@ async def on_message(message):
         else:
             await client.send_message(message.channel, 'Only Benroy#7151 can do this')
 
+#PRINT SERVERS BOT IS CONNECTED TO IN CHAT
 @client.command(pass_context=True)
 async def servers(ctx):
     list = ''
