@@ -33,7 +33,6 @@ async def on_message(message):
 
 @client.command(pass_context=True)
 async def servers(ctx):
-
     list = ''
     for server in client.servers:
         list += str(server)+',\n'
