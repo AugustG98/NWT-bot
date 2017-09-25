@@ -1,8 +1,8 @@
 import discord
 from discord.ext import commands
 import re
-import InputHandler
-import OutputHandler
+from InputHandler import Process
+from OutputHandler import getVerses
 import languages
 import books
 
@@ -53,7 +53,7 @@ async def english(ctx, book, chapterANDverse, add='0'):
 
 #HEBREW
 @client.command(pass_context=True)
-async def english(ctx, book, chapterANDverse, add='0'):
+async def hebrew(ctx, book, chapterANDverse, add='0'):
     language = 'hebrew'
     try:
         header, verse, data = getdata(book, chapterANDverse, language, add)
@@ -69,7 +69,7 @@ async def english(ctx, book, chapterANDverse, add='0'):
 
 #GREEK
 @client.command(pass_context=True)
-async def english(ctx, book, chapterANDverse, add='0'):
+async def greek(ctx, book, chapterANDverse, add='0'):
     language = 'greek'
     try:
         header, verse, data = getdata(book, chapterANDverse, language, add)
@@ -85,7 +85,7 @@ async def english(ctx, book, chapterANDverse, add='0'):
 
 #FRENCH
 @client.command(pass_context=True)
-async def english(ctx, book, chapterANDverse, add='0'):
+async def french(ctx, book, chapterANDverse, add='0'):
     language = 'french'
     try:
         header, verse, data = getdata(book, chapterANDverse, language, add)
@@ -101,7 +101,7 @@ async def english(ctx, book, chapterANDverse, add='0'):
 
 #SPANISH
 @client.command(pass_context=True)
-async def english(ctx, book, chapterANDverse, add='0'):
+async def spanish(ctx, book, chapterANDverse, add='0'):
     language = 'spanish'
     try:
         header, verse, data = getdata(book, chapterANDverse, language, add)
@@ -117,8 +117,8 @@ async def english(ctx, book, chapterANDverse, add='0'):
 
 def getdata(book, chapterANDverse, language, add):
 
-    booknumber, chapter, verse, fromVerse, toVerse = InputHandler.process(book, chapterANDverse, language, add)
-    header, verse, data = OutputHandler.getVerses(booknumber, chapter, verse, fromVerse, toVerse, language)
+    booknumber, chapter, verse, fromVerse, toVerse = Process(book, chapterANDverse, language, add)
+    header, verse, data = getVerses(booknumber, chapter, verse, fromVerse, toVerse, language)
     return(header, verse, data)
 
 client.run('token')
