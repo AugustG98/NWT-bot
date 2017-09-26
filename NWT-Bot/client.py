@@ -1,7 +1,7 @@
 import discord
 from discord.ext import commands
 import re
-from InputHandler import Process
+from InputHandler import Format
 from OutputHandler import GetData
 import languages
 import books
