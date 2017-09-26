@@ -39,84 +39,48 @@ async def language():
 #ENGLISH
 @client.command(pass_context=True)
 async def english(ctx, book, chapterANDverse, add='0'):
-    language = 'english'
-    try:
-        header, verse, data = getdata(book, chapterANDverse, language, add)
-        try:
-            await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
-
-        except Exception:
-            await client.say(TooLong)
-
-    except Exception:
-        await client.say(Format)
-        pass
+    await GetVerses('english', book, chapterANDverse, add)
 
 #HEBREW
 @client.command(pass_context=True)
 async def hebrew(ctx, book, chapterANDverse, add='0'):
-    language = 'hebrew'
-    try:
-        header, verse, data = getdata(book, chapterANDverse, language, add)
-        try:
-            await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
-
-        except Exception:
-            await client.say(TooLong)
-
-    except Exception:
-        await client.say(Format)
-        pass
+    await GetVerses('hebrew', book, chapterANDverse, add)
 
 #GREEK
 @client.command(pass_context=True)
 async def greek(ctx, book, chapterANDverse, add='0'):
-    language = 'greek'
-    try:
-        header, verse, data = getdata(book, chapterANDverse, language, add)
-        try:
-            await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
-
-        except Exception:
-            await client.say(TooLong)
-
-    except Exception:
-        await client.say(Format)
-        pass
+    await GetVerses('greek', book, chapterANDverse, add)
 
 #FRENCH
 @client.command(pass_context=True)
 async def french(ctx, book, chapterANDverse, add='0'):
-    language = 'french'
-    try:
-        header, verse, data = getdata(book, chapterANDverse, language, add)
-        try:
-            await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
-
-        except Exception:
-            await client.say(TooLong)
-
-    except Exception:
-        await client.say(Format)
-        pass
+    await GetVerses('french', book, chapterANDverse, add)
 
 #SPANISH
 @client.command(pass_context=True)
 async def spanish(ctx, book, chapterANDverse, add='0'):
-    language = 'spanish'
+    await GetVerses('spanish', book, chapterANDverse, add)
+
+#GERMAN
+@client.command(pass_context=True)
+async def german(ctx, book, chapterANDverse, add='0'):
+    await GetVerses('german', book, chapterANDverse, add)
+
+
+def GetVerses(language, book, chapterANDverse, add):
     try:
-        header, verse, data = getdata(book, chapterANDverse, language, add)
+        header, verse, data = Handler(book, chapterANDverse, language, add)
         try:
-            await client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
+            return client.say('**'+header+':'+verse+' - New World Translation (NWT)**\n\n```css\n'+data+'```')
 
         except Exception:
-            await client.say(TooLong)
+            return client.say(TooLong)
 
     except Exception:
-        await client.say(Format)
+        return client.say(Format)
         pass
 
-def getdata(book, chapterANDverse, language, add):
+def Handler(book, chapterANDverse, language, add):
 
     booknumber, chapter, verse, fromVerse, toVerse = Process(book, chapterANDverse, language, add)
     header, verse, data = GetData(booknumber, chapter, verse, fromVerse, toVerse, language)
