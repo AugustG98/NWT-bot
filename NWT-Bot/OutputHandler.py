@@ -41,4 +41,3 @@ def GetData(booknumber, chapter, verse, fromVerse, toVerse, language):
     result = result.replace('.9', '. 9')
 
     return(header, verse, result)
-
