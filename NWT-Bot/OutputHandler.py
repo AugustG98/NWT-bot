@@ -3,7 +3,7 @@ import bs4 as bs
 import re
 import languages
 
-def getVerses(booknumber, chapter, verse, fromVerse, toVerse, language):
+def GetData(booknumber, chapter, verse, fromVerse, toVerse, language):
 
     if language in languages.languageURLs:
         URL = languages.languageURLs.get(language)
