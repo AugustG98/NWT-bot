@@ -1,6 +1,4 @@
 import books
-import time
-from datetime import datetime
 
 def Format(book, Chapter_Verse, language, add):
     if (add != '0'):
