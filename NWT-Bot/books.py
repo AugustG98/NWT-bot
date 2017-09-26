@@ -39,7 +39,7 @@ bookprefix = {
     '1sam' : '9',
     '2Samuel' : '10',
     '2samuel' : '10',
-    '2Sam' : '10','
+    '2Sam' : '10',
     '2sam' : '10',
     '1Kings' : '11',
     '1kings' : '11',
