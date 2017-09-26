@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import re
 from InputHandler import Process
-from OutputHandler import getVerses
+from OutputHandler import GetData
 import languages
 import books
 
@@ -17,6 +17,7 @@ Format = '**Wrong format used, try again:**\n```!language bookname chapter:verse
 @client.event
 async def on_ready():
     print(online)
+    await client.change_presence(game=discord.Game(name='https://github.com/Viva98/NWT-Bot'))
 
 @client.command(pass_context=True)
 async def servers(ctx):
@@ -118,7 +119,7 @@ async def spanish(ctx, book, chapterANDverse, add='0'):
 def getdata(book, chapterANDverse, language, add):
 
     booknumber, chapter, verse, fromVerse, toVerse = Process(book, chapterANDverse, language, add)
-    header, verse, data = getVerses(booknumber, chapter, verse, fromVerse, toVerse, language)
+    header, verse, data = GetData(booknumber, chapter, verse, fromVerse, toVerse, language)
     return(header, verse, data)
 
 client.run('token')
