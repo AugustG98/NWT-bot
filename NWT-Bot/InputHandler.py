@@ -2,7 +2,7 @@ import books
 import time
 from datetime import datetime
 
-def Process(book, Chapter_Verse, language, add):
+def Format(book, Chapter_Verse, language, add):
     if (add != '0'):
         book += Chapter_Verse
         Chapter_Verse = add
