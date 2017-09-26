@@ -82,7 +82,7 @@ def GetVerses(language, book, chapterANDverse, add):
 
 def Handler(book, chapterANDverse, language, add):
 
-    booknumber, chapter, verse, fromVerse, toVerse = Process(book, chapterANDverse, language, add)
+    booknumber, chapter, verse, fromVerse, toVerse = Format(book, chapterANDverse, language, add)
     header, verse, data = GetData(booknumber, chapter, verse, fromVerse, toVerse, language)
     return(header, verse, data)
 
