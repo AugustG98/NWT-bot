@@ -3,6 +3,6 @@ languageURLs = {
     'hebrew' : 'https://wol.jw.org/he/wol/b/r145/lp-q/sbi1/Q/2012/',
     'greek' : 'https://wol.jw.org/el/wol/b/r11/lp-g/bi12/G/1997/',
     'french' : 'https://wol.jw.org/fr/wol/b/r30/lp-f/Rbi8/F/1995/',
-    'spanish' : 'https://wol.jw.org/es/wol/b/r4/lp-s/Rbi8/S/1987/'
-    
+    'spanish' : 'https://wol.jw.org/es/wol/b/r4/lp-s/Rbi8/S/1987/',
+    'german' : 'https://wol.jw.org/de/wol/b/r10/lp-x/Rbi8/X/1986/'
     }
