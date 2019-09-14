@@ -17,7 +17,7 @@ Other commands:
 
 ---
 
-**INVITE BOT TO YOUR SERVER** : https://discordapp.com/oauth2/authorize?client_id=360576523062870016&scope=bot
+**INVITE BOT TO YOUR SERVER** : https://discordapp.com/oauth2/authorize?client_id=346784129922236427&scope=bot
 
 
 # Built With
